@@ -6,7 +6,6 @@ use App\Modules\ImageUpload\CloudinaryImageManager;
 use App\Modules\ImageUpload\ImageManagerInterface;
 use App\Modules\ImageUpload\LocalImageManager;
 use Cloudinary\Cloudinary;
-use CloudinaryImageManager as GlobalCloudinaryImageManager;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
             return new Cloudinary([
                 'cloud' => [
                     'cloud_name' => config('cloudinary.cloud_name'),
-                    'api_key' => config('clouidinary.api_key'),
-                    'api_secret' => config('cloudinary.api_serret'),
+                    'api_key' => config('cloudinary.api_key'),
+                    'api_secret' => config('cloudinary.api_secret'),
                 ],
             ]);
         });

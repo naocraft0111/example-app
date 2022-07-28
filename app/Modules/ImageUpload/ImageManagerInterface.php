@@ -6,7 +6,7 @@ namespace App\Modules\ImageUpload;
 interface ImageManagerInterface
 {
     /**
-     * @param \Illyminate\Http\File|\Illuminate\Http\UploadedFile|string $file
+     * @param \Illuminate\Http\File|\Illuminate\Http\UploadedFile|string $file
      * @return string
      */
     public function save($file): string;

@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
 
-use App\Modules\ImageUpload\ImageManagerInterface;
+namespace App\Modules\ImageUpload;
+
 use Cloudinary\Cloudinary;
 
 class CloudinaryImageManager implements ImageManagerInterface

@@ -2,10 +2,10 @@
 
 namespace App\Services;
 
-use App\Modules\ImageUpload\ImageManagerInterface;
 use App\Models\Tweet;
 use Carbon\Carbon;
 use App\Models\Image;
+use App\Modules\ImageUpload\ImageManagerInterface;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
